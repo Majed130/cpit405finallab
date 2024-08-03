@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Hub</title>
+    <link rel="stylesheet" href="custom_styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="./shopIcon.jpg" alt="Cart" class="shop-icon" onclick="navigateToCart()">
+        <h1>Shopping Hub</h1>
+        <nav>
+            <ul>
+                
+                <li><button onclick="window.location.href='login.html'" style="padding: 8px 16px; margin-left: 20px; cursor: pointer;">Login</button></li>  <!-- Login button added here -->
+            </ul>
+        </nav>
+        <input type="text" id="searchInput" placeholder="Search products" onkeyup="filterProducts()">
+    </header>
+
+    
+    <div id="miniCart" style="text-align:center; margin-top: 20px;">
+        <p>Items in Cart: <span id="itemCount">0</span></p>
+        <p>Total: $<span id="totalPrice">0.00</span></p>
+        <button onclick="navigateToCheckout()">Proceed to Checkout</button>
+    </div>
+
+    <main id="productContainer"></main>
+    <footer>
+        <p>© 2024 Shopping Hub. All rights reserved.</p>
+    </footer>
+    <script src="products.js"></script>
+</body>
+</html>

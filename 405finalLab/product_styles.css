@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    height: 50px;  
+}
+
+main, aside {
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product-detail {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 60%;  /* This ensures all product details boxes are the same width */
+    display: inline-block;
+    margin-bottom: 20px;  /* Consistent spacing between boxes */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  
+    background-color: #fff;  /* Ensures a consistent background */
+}
+
+aside {
+    width: 35%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    top: 120px;  /* Adjust based on header height */
+}
+
+aside h3, aside ul, aside p {
+    margin-top: 10px;
+}
+
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart ul li {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+img {
+    width: 100%;  
+    height: auto;  
+    display: block;  
+}
+#cart button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cart button:hover {
+    background-color: darkred;
+}
